@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <div>
+        <p class="eyebrow">Today</p>
+        <h1>Todo List</h1>
+      </div>
+      <button id="clearCompleted" class="ghost">Clear completed</button>
+    </header>
+
+    <section class="add">
+      <input id="newTodoInput" type="text" placeholder="Add a new task..." autocomplete="off">
+      <button id="addTodo">Add</button>
+    </section>
+
+    <section class="filters">
+      <button data-filter="all" class="filter is-active">All</button>
+      <button data-filter="active" class="filter">Active</button>
+      <button data-filter="completed" class="filter">Completed</button>
+    </section>
+
+    <ul id="todoList" class="list" aria-live="polite"></ul>
+
+    <footer class="app__footer">
+      <span id="remainingCount">0 items left</span>
+      <span class="hint">Changes are saved automatically.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
